@@ -19,5 +19,5 @@
 - All the path to the assets should be absolute starting from **"/assets/[whatever]"** 
 - I have configured react-bootstrap so you can you any prebuilt component it provides.
 - All the samples are available on the sample branch of this repo
-- You will commit your changes to the **dev** branch
+- You will commit your changes to the **dev_your_name** branch (which you will have to create).
 - The **main** and **dev** branches will be clean.
