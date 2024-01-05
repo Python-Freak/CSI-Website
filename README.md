@@ -2,7 +2,7 @@
 
 ### Frontend
 - **For now just the client (i.e the frontend has been created)**
-- **You guys will be working under client folder for the backend**
+- **You guys will be working under client folder for the frontend**
 
 #### Instructions:
 - Under the client folder a src/Pages subfolder is created. All the new pages will be added there.
