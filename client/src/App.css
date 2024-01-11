@@ -1,5 +1,12 @@
+:root {
+  --csi-blue: #061D4B
+}
+
 .App {
   text-align: center;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
 }
 
 .App-logo {
@@ -24,6 +31,17 @@
   color: white;
 }
 
+html {
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -32,6 +50,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

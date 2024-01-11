@@ -38,3 +38,8 @@
 - Now, to add your contirbution in a branch with your name like this: **dev_name**
 - Use command **`git checkout -b branch_name`** to create your branch
 
+#### Using data
+
+- The data like **events**, **board member (names and positions)**, etc should be strictly read from a json file which is directly located in the same folder as the component, i.e the **json file** and the **[Component].js** should be under the same folder.
+- There should be no hard coding for these types data, strictly make a state and load this data in that state.
+
