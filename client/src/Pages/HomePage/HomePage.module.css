@@ -1,0 +1,32 @@
+.logo_div {
+    height: 460px;
+    width: 100vw;
+    background-color: var(--csi-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 50px;
+    height: 270px;
+    aspect-ratio: 1;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.h3__ {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-weight: bolder;
+    font-size: xx-large;
+
+}
+
+@media only screen and (max-width: 992px) {
+    .logo {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 980px) {}
