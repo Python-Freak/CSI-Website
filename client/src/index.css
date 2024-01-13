@@ -11,3 +11,97 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.footer {
+  height: 1534px;
+  width: 1440px;
+}
+
+.footer .links-group {
+  height: 1534px;
+  background-color: #061d4b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer .vector {
+  height: 229px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.footer .phnumber {
+  height: 65px;
+  left: 445px;
+  display: inline-flex;
+  position: absolute;
+  top: 836px;
+  width: 426px;
+}
+
+.footer .text-wrapper {
+  color: #ffffff;
+  font-family: "Nunito Sans-Bold", Helvetica;
+  font-size: 45px;
+  font-weight: 700;
+  left: 88px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+}
+
+.footer .mi-call {
+  height: 64px;
+  left: 0;
+  position: absolute;
+  top: 1px;
+  width: 64px;
+}
+
+.footer .mail {
+  align-items: center;
+  display: inline-flex;
+  gap: 24px;
+  left: 445px;
+  position: absolute;
+  top: 673px;
+}
+
+.footer .material-symbols {
+  height: 64px;
+  position: relative;
+  width: 64px;
+}
+
+.footer .div {
+  color: #ffffff;
+  font-family: "Nunito Sans-Bold", Helvetica;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.footer .img {
+  height: 98px;
+  left: 523px;
+  position: absolute;
+  top: 1049px;
+  width: 394px;
+}
+
+.footer .social-medias {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 50px;
+  height: 98px;
+}

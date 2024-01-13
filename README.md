@@ -1,10 +1,9 @@
 ## CSI - Nirma Website
 
 ### Frontend
-- **For now just the client (i.e the frontend has been created)**
-- **You guys will be working under client folder for the frontend**
 
-
+- **For now just the client (i.e the frontend) has been created**
+- **You guys will be working under client folder for the backend**
 
 #### General Instructions:
 
