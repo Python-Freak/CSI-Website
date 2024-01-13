@@ -36,3 +36,4 @@
 - If you are working on the **main** branch, then switch to **sample** branch using the command **`git checkout sample`**
 - Now, to add your contirbution in a branch with your name like this: **dev_name**
 - Use command **`git checkout -b branch_name`** to create your branch
+
