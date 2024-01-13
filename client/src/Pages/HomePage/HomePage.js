@@ -39,8 +39,8 @@ function HomePage() {
                     tempor incididunt ut labore et dolore magna aliqua." eventDate="09-02-2024" regLink="https://google.com" />
                     </div>
                     <div className={`col-md-4 ${styles.card}`}>
-                        <EventCard eventName="Cubix" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua." eventDate="09-02-2024" regLink="https://google.com" />
+                        <EventCard eventName="HackNUThon" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua." eventDate="09-03-2024" regLink="https://google.com" />
                     </div>
 
                 </div>
@@ -49,6 +49,9 @@ function HomePage() {
             <div className={`${styles.board_members}`}>
                 <div className={`${styles.heading} row justify-content-center align-items-center`} style={{ color: "white" }} >
                     Board Members
+                </div>
+                <div className="row">
+                    
                 </div>
             </div>
         </div>

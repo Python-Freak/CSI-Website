@@ -17,12 +17,15 @@ function EventCard(props) {
                     {props.description}
                 </div>
             </div>
+            <div className="separator">
+
+            </div>
             <div className="card-footer">
                 <div className="price">
                     <h4 className="p-0 m-0">{props.eventDate}</h4>
                 </div>
                 <div className="stats">
-                    <p className="card-category p-0 m-0"><Button href={`${props.regLink}`}>Register</Button></p>
+                    <p className="card-category p-0 m-0"><Button className="reg-button" href={`${props.regLink}`}>Register</Button></p>
                 </div>
             </div>
         </div>

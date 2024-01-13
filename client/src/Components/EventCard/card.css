@@ -48,6 +48,25 @@
     font-weight: 300;
 }
 
+.card-footer {
+    border-top: none;
+}
+
+.separator {
+    height: 1px;
+    width: 100%;
+    margin: 0;
+    background: -moz-linear-gradient(90deg, var(--csi-blue) 0%, rgba(255, 255, 255, 1) 50%, var(--csi-blue) 100%);
+    background: -webkit-linear-gradient(90deg, var(--csi-blue) 0%, rgba(255, 255, 255, 1) 50%, var(--csi-blue) 100%);
+    background: linear-gradient(90deg, var(--csi-blue) 0%, rgba(255, 255, 255, 1) 50%, var(--csi-blue) 100%);
+}
+
+.reg-button {
+    background-color: var(--csi-blue);
+    border: 1px solid white;
+    color: white;
+}
+
 .card .card-footer .stats p {
     color: #999;
     font-size: 22px;
