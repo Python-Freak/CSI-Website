@@ -19,16 +19,12 @@ code {
 
 .footer .links-group {
   height: 1534px;
-  position: relative;
-}
-
-.footer .footer {
   background-color: #061d4b;
-  height: 1306px;
-  left: 0;
-  position: absolute;
-  top: 228px;
-  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .footer .vector {
@@ -103,8 +99,9 @@ code {
   width: 394px;
 }
 
-.footer .social-media {
+.footer .social-medias {
   display: inline-flex;
   align-items: flex-end;
   gap: 50px;
+  height: 98px;
 }

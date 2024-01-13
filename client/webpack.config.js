@@ -16,6 +16,11 @@ module.exports = {
                 test: /\.css$/,
                 use: ["style-loader", "css-loader"],
             },
+            {
+                test: /\.svg$/,
+                exclude: excludeArray,
+                loader: "svg-inline-loader"
+            }
         ],
     },
     plugins: [
