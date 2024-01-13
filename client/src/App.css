@@ -5,8 +5,9 @@
 .App {
   text-align: center;
   background-color: #fff;
+  min-width: 360px;
   width: 100vw;
-  height: 100vh;
+  margin: 0;
 }
 
 .App-logo {
@@ -32,14 +33,15 @@
 }
 
 html {
-  width: 100vw !important;
-  height: 100vh !important;
-  overflow-x: hidden;
+  min-width: 360px;
+  width: 100vw;
+  margin: 0;
 }
 
 body {
+  min-width: 360px;
   width: 100vw;
-  height: 100vh;
+  margin: 0;
 }
 
 .App-link {
