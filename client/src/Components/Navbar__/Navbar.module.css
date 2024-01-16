@@ -12,6 +12,7 @@
     background-color: var(--csi-blue) !important;
     display: flex;
     align-items: center;
+    padding-top: 5px;
 }
 
 .logo {
@@ -29,6 +30,7 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    transition: none;
 }
 
 .nav_links {

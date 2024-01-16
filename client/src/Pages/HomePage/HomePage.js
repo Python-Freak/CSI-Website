@@ -2,24 +2,23 @@ import React, { useEffect, useState, useLayoutEffect } from 'react'
 import styles from "./HomePage.module.css"
 import { ReactSVG } from 'react-svg'
 import EventCard from '../../Components/EventCard/EventCard';
-
-function useWindowSize() {
-    const [size, setSize] = useState([0, 0]);
-    useLayoutEffect(() => {
-        function updateSize() {
-            setSize([window.innerWidth, window.innerHeight]);
-        }
-        window.addEventListener('resize', updateSize);
-        updateSize();
-        return () => window.removeEventListener('resize', updateSize);
-    }, []);
-    return size;
-}
+import BoardMemberCard from './Components/BoardMemberCard/BoardMemberCard';
+import EventSwiper from './Components/EventSwiper/EventSwiper';
+// import EventSwiper from './Components/EventSwiper/EventSwiper';
+// function useWindowSize() {
+//     const [size, setSize] = useState([0, 0]);
+//     useLayoutEffect(() => {
+//         function updateSize() {
+//             setSize([window.innerWidth, window.innerHeight]);
+//         }
+//         window.addEventListener('resize', updateSize);
+//         updateSize();
+//         return () => window.removeEventListener('resize', updateSize);
+//     }, []);
+//     return size;
+// }
 
 function HomePage() {
-
-    const [width, height] = useWindowSize();
-
     return (
         <div style={{ width: "100%" }}>
             <div className={styles.logo_div}>
@@ -33,7 +32,7 @@ function HomePage() {
                 <div className={`${styles.heading} row justify-content-center align-items-center`} >
                     Upcoming Events
                 </div>
-                <div className={`row p-3 ${styles.card_container}`} >
+                <div className={`row p-3 ${styles.card_container}`} id="events" >
                     <div className={`col-md-4 ${styles.card}`}>
                         <EventCard eventName="Cubix" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua." eventDate="09-02-2024" regLink="https://google.com" />
@@ -50,12 +49,75 @@ function HomePage() {
                 <div className={`${styles.heading} row justify-content-center align-items-center`} style={{ color: "white" }} >
                     Board Members
                 </div>
-                <div className="row">
-                    
+                <div className={styles.board_member_container}>
+                    <div className={`row p-3 ${styles.card_container} ${styles.board_card_container}`}>
+                        <div className={`col-md-6 ${styles.card}`}>
+                            <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                        </div>
+
+                        <div className={`col-md-6 ${styles.card} `}>
+                            <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                        </div>
+                    </div>
+                    <div className={`row p-3 ${styles.card_container} ${styles.board_card_container}`}>
+                        <div className={`col-md-4 ${styles.card}`}>
+                            <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                        </div>
+
+                        <div className={`col-md-4 ${styles.card}`}>
+                            <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                        </div>
+
+                        <div className={`col-md-4 ${styles.card}`}>
+                            <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                        </div>
+                        <div className={`col-md-4 ${styles.card}`}>
+                            <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                        </div>
+
+                        <div className={`col-md-4 ${styles.card}`}>
+                            <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                        </div>
+
+                        <div className={`col-md-4 ${styles.card}`}>
+                            <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                        </div>
+                        <div className={`col-md-4 ${styles.card}`}>
+                            <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                        </div>
+
+                        <div className={`col-md-4 ${styles.card}`}>
+                            <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                        </div>
+
+                        <div className={`col-md-4 ${styles.card}`}>
+                            <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                        </div>
+                        <div className={`col-md-4 ${styles.card}`}>
+                            <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                        </div>
+
+                        <div className={`col-md-4 ${styles.card}`}>
+                            <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                        </div>
+
+                        <div className={`col-md-4 ${styles.card}`}>
+                            <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+            <ReactSVG src='/assets/svgs/wave_3.svg' className={`${styles.wave_3}`} />
+            <div className={styles.past_events}>
+                <div className={`${styles.heading_past_events} row justify-content-center align-items-center`} >
+                    Past Events
+                </div>
+                <div className="swiper">
+                    <EventSwiper />
+                </div>
+            </div>
+        </div >
     )
 }
 
-export default HomePage
+export default HomePage;

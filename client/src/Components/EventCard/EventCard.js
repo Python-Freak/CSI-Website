@@ -7,7 +7,7 @@ function EventCard(props) {
     return (
         <div className="card card-product">
             <div className="card-header card-header-image bg-white border-0" data-header-animation="true">
-                <img src="/assets/images/events/sample_event.jpeg" className="img-fluid" />
+                <img src="/assets/images/events/upcoming/sample_event.jpeg" className="img-fluid" />
             </div>
             <div className="card-body">
                 <h4 className="card-title text-center">
