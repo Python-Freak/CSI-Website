@@ -1,16 +1,23 @@
 .footer {
     height: 1534px;
-    width: 1440px;
+    width: -webkit-fill-available;
+}
+
+.footer svg {
+    width: -webkit-fill-available;
+    vertical-align: bottom;
 }
 
 .footer .links_group {
     height: 1534px;
-    background-color: #061d4b;
+    background-color: var(--csi-blue);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    align-content: center;
+    gap: 36px;
 }
 
 .footer .vector {
@@ -22,12 +29,16 @@
 }
 
 .footer .phnumber {
-    height: 65px;
+    height: fit-content;
     left: 445px;
-    display: inline-flex;
-    position: absolute;
+    display: flex;
+    /* position: absolute; */
     top: 836px;
-    width: 426px;
+    width: fit-content;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer .text_wrapper {
@@ -45,7 +56,7 @@
 .footer .mi_call {
     height: 64px;
     left: 0;
-    position: absolute;
+    /* position: absolute; */
     top: 1px;
     width: 64px;
 }
@@ -55,7 +66,7 @@
     display: inline-flex;
     gap: 24px;
     left: 445px;
-    position: absolute;
+    /* position: absolute; */
     top: 673px;
 }
 
@@ -73,8 +84,9 @@
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1px;
-    position: relative;
+    /* position: relative; */
     width: fit-content;
+    white-space: nowrap;
 }
 
 .footer .img {
@@ -86,8 +98,44 @@
 }
 
 .footer .social_medias {
-    display: inline-flex;
-    align-items: flex-end;
+    display: flex;
     gap: 50px;
-    height: 98px;
+
+}
+
+
+@media only screen and (max-width: 992px) {
+    .right {
+        display: block;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: 43px;
+        padding-top: 15px;
+    }
+
+    .br {
+        display: block;
+    }
+
+    .nav_links {
+        margin-right: 0px;
+        margin-bottom: 10px;
+        font-size: larger;
+        /* font-weight: bold; */
+    }
+
+    .nav_divider {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .large_font {
+        font-size: medium;
+    }
+
+    .small_font {
+        font-size: 11px;
+    }
 }
