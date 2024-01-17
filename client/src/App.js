@@ -16,7 +16,7 @@ function App() {
           <Route exact path='/' element={<HomePage />}></Route>
         </Routes>
       </BrowserRouter>
-      {/* <Footer /> // Milapp will update */}
+      <Footer />
     </div>
   );
 }

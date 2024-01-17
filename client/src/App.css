@@ -1,6 +1,7 @@
 :root {
   --primary-color: #061D4B;
-  --csi-blue: #013399;
+  --csi-blue: #061D4B;
+  /* 013399 */
   /* --primary-color: white; */
   /* --primary-text-color: black; */
   /* --primary-text-color-light: rgba(255, 255, 255, 0.8); */
@@ -14,6 +15,7 @@
   min-width: 360px;
   width: 100vw;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -42,6 +44,7 @@ html {
   min-width: 360px;
   width: 100vw;
   margin: 0;
+  overflow-x: hidden;
 }
 
 body {
