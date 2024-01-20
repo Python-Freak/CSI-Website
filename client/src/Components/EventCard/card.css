@@ -1,0 +1,112 @@
+.card {
+    background-color: var(--csi-blue);
+    box-shadow: 0 1px 4px 0 rgb(0 0 0/14%);
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.card .card-header.card-header-image {
+    position: relative;
+    padding: 0;
+    width: 90%;
+    z-index: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+
+.card .card-header.card-header-image img {
+    width: 100%;
+    border-radius: 6px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    pointer-events: none;
+    -webkit-box-shadow: 0px 0px 15px 0px var(--csi-blue);
+    -moz-box-shadow: 0px 0px 15px 0px var(--csi-blue);
+    box-shadow: 0px 0px 15px 0px var(--csi-blue);
+    margin-bottom: 0px;
+    z-index: 999;
+    border: 1.5px solid whitesmoke;
+}
+
+.card .card-footer {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: transparent;
+}
+
+.card-product .price h4 {
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+}
+
+.card-footer {
+    border-top: none;
+}
+
+.separator {
+    height: 1px;
+    width: 100%;
+    margin: 0;
+    background: -moz-linear-gradient(90deg, var(--csi-blue) 0%, rgba(255, 255, 255, 1) 50%, var(--csi-blue) 100%);
+    background: -webkit-linear-gradient(90deg, var(--csi-blue) 0%, rgba(255, 255, 255, 1) 50%, var(--csi-blue) 100%);
+    background: linear-gradient(90deg, var(--csi-blue) 0%, rgba(255, 255, 255, 1) 50%, var(--csi-blue) 100%);
+}
+
+.reg-button {
+    background-color: var(--csi-blue);
+    border: 1px solid white;
+    color: white;
+}
+
+.card .card-footer .stats p {
+    color: #999;
+    font-size: 22px;
+}
+
+.title__ {
+    color: white;
+    font-weight: bolder;
+}
+
+.card-description {
+    color: #999;
+    color: white;
+    font-weight: 300;
+}
+
+h4.card-title {
+    color: white;
+    font-weight: 300;
+}
+
+.card .card-body {
+    position: relative;
+}
+
+.card .card-actions {
+    position: absolute;
+    z-index: 0;
+    top: -50px;
+    width: calc(100% - 30px);
+    left: 17px;
+    right: 17px;
+}
+
+.card[data-header-animation=true] {
+    transform: translateZ(0);
+    transition: all 1.2s cubic-bezier(.34, 1.61, .7, 1);
+}
+
+.card:hover [data-header-animation=true] {
+    transform: translate3d(0, -50px, 0);
+    transition: all 1.2s cubic-bezier(.34, 1.61, .7, 1);
+}

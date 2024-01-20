@@ -1,0 +1,11 @@
+.card {
+    width: 350px;
+    height: 500px;
+    background-color: aqua;
+}
+
+.card_image {
+    width: 350px;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+}
