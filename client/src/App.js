@@ -5,6 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from 'react-router-dom';
 import Navbar__ from "./Components/Navbar__/Navbar__"
 import HomePage from './Pages/HomePage/HomePage';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route exact path='/' element={<HomePage />}></Route>
         </Routes>
       </BrowserRouter>
+      <Footer />
     </div>
   );
 }

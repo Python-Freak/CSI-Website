@@ -1,0 +1,141 @@
+.footer {
+    height: 1534px;
+    width: -webkit-fill-available;
+}
+
+.footer svg {
+    width: -webkit-fill-available;
+    vertical-align: bottom;
+}
+
+.footer .links_group {
+    height: 1534px;
+    background-color: var(--csi-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 36px;
+}
+
+.footer .vector {
+    height: 229px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1440px;
+}
+
+.footer .phnumber {
+    height: fit-content;
+    left: 445px;
+    display: flex;
+    /* position: absolute; */
+    top: 836px;
+    width: fit-content;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .text_wrapper {
+    color: #ffffff;
+    font-family: "Nunito Sans-Bold", Helvetica;
+    font-size: 45px;
+    font-weight: 700;
+    left: 88px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+}
+
+.footer .mi_call {
+    height: 64px;
+    left: 0;
+    /* position: absolute; */
+    top: 1px;
+    width: 64px;
+}
+
+.footer .mail {
+    align-items: center;
+    display: inline-flex;
+    gap: 24px;
+    left: 445px;
+    /* position: absolute; */
+    top: 673px;
+}
+
+.footer .material_symbols {
+    height: 64px;
+    position: relative;
+    width: 64px;
+}
+
+.footer .div {
+    color: #ffffff;
+    font-family: "Nunito Sans-Bold", Helvetica;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    /* position: relative; */
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.footer .img {
+    height: 98px;
+    left: 523px;
+    position: absolute;
+    top: 1049px;
+    width: 394px;
+}
+
+.footer .social_medias {
+    display: flex;
+    gap: 50px;
+
+}
+
+
+@media only screen and (max-width: 992px) {
+    .right {
+        display: block;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: 43px;
+        padding-top: 15px;
+    }
+
+    .br {
+        display: block;
+    }
+
+    .nav_links {
+        margin-right: 0px;
+        margin-bottom: 10px;
+        font-size: larger;
+        /* font-weight: bold; */
+    }
+
+    .nav_divider {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .large_font {
+        font-size: medium;
+    }
+
+    .small_font {
+        font-size: 11px;
+    }
+}

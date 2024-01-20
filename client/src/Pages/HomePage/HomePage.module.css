@@ -15,6 +15,8 @@
     aspect-ratio: 1;
     object-fit: contain;
     margin-bottom: 20px;
+    box-shadow: 1px white;
+    border-radius: 50%;
 }
 
 .h3__ {
@@ -34,6 +36,15 @@
     z-index: -100;
 }
 
+.wave_3 {
+    margin-top: -10px;
+    z-index: -100;
+}
+
+.board_card_container {
+    width: 96%;
+}
+
 .upcoming_events {
     width: 100%;
     margin-bottom: 40px;
@@ -46,6 +57,13 @@
 }
 
 .heading {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: var(--csi-blue);
+}
+
+.heading_past_events {
     font-size: 50px;
     font-weight: bold;
     margin-top: 20px;
@@ -69,6 +87,15 @@
     min-height: 100px;
     background-color: var(--csi-blue);
     margin-top: -35px;
+    padding: 5%;
+}
+
+.board_member_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 @media only screen and (max-width: 992px) {
@@ -78,6 +105,10 @@
 
     .wave_1 {
         margin-top: -150px;
+    }
+
+    .board_card_container {
+        width: 90%;
     }
 
 }
@@ -92,6 +123,12 @@
     }
 
     .heading {
+        font-size: 40px;
+        font-weight: bold;
+        color: var(--csi-blue);
+    }
+
+    .heading_past_events {
         font-size: 40px;
         font-weight: bold;
         color: var(--csi-blue);

@@ -9,9 +9,10 @@
 }
 
 .navbar__ {
-    background-color: #061D4B !important;
+    background-color: var(--csi-blue) !important;
     display: flex;
     align-items: center;
+    padding-top: 5px;
 }
 
 .logo {
@@ -29,6 +30,7 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    transition: none;
 }
 
 .nav_links {
@@ -55,8 +57,12 @@
 
 .nav_divider {
     display: block;
+    height: 1px;
     width: 100%;
-    border-bottom: 1px dotted white;
+    margin: 0;
+    background: -moz-linear-gradient(90deg, var(--csi-blue) 0%, rgba(255, 255, 255, 1) 50%, var(--csi-blue) 100%);
+    background: -webkit-linear-gradient(90deg, var(--csi-blue) 0%, rgba(255, 255, 255, 1) 50%, var(--csi-blue) 100%);
+    background: linear-gradient(90deg, var(--csi-blue) 0%, rgba(255, 255, 255, 1) 50%, var(--csi-blue) 100%);
 }
 
 @media only screen and (max-width: 992px) {

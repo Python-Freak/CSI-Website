@@ -7,7 +7,7 @@ function EventCard(props) {
     return (
         <div className="card card-product">
             <div className="card-header card-header-image bg-white border-0" data-header-animation="true">
-                <img src="/assets/images/events/sample_event.jpeg" className="img-fluid" />
+                <img src="/assets/images/events/upcoming/sample_event.jpeg" className="img-fluid" />
             </div>
             <div className="card-body">
                 <h4 className="card-title text-center">
@@ -17,12 +17,15 @@ function EventCard(props) {
                     {props.description}
                 </div>
             </div>
+            <div className="separator">
+
+            </div>
             <div className="card-footer">
                 <div className="price">
                     <h4 className="p-0 m-0">{props.eventDate}</h4>
                 </div>
                 <div className="stats">
-                    <p className="card-category p-0 m-0"><Button href={`${props.regLink}`}>Register</Button></p>
+                    <p className="card-category p-0 m-0"><Button className="reg-button" href={`${props.regLink}`}>Register</Button></p>
                 </div>
             </div>
         </div>
