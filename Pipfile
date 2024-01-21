@@ -19,6 +19,7 @@ storage3 = "*"
 django-storages = {extras = ["s3"] }
 pyrebase4 = "*"
 python-dotenv = "*"
+gunicorn = "*"
 
 [dev-packages]
 
