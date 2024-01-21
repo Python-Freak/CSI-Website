@@ -12,12 +12,13 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
-from dotenv import load_dotenv
 from datetime import timedelta
+from os.path import join, dirname
+from dotenv import load_dotenv
 
-load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+load_dotenv(os.path.join(BASE_DIR.parent, ".env"))
 
 SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
 
