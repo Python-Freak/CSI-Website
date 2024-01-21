@@ -40,6 +40,14 @@ INSTALLED_APPS = [
     'storages',
 ]
 
+CORS_ORIGIN_WHITELIST = [
+    'https://csi-website-production.up.railway.app',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://csi-website-production.up.railway.app'
+],
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
