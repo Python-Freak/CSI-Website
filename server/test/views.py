@@ -21,7 +21,7 @@ storage = firebase.storage()
 @csrf_exempt
 def test_file(req):
     file = req.FILES['test']
-    file_save = default_storage.save(file.name, file)
-    storage.child("files/" + file.name).put("media/" + file.name)
-    delete = default_storage.delete(file.name)
+    
+    storage.child("files/" + file.name).put(file)
+
     return JsonResponse({"code": 200})
