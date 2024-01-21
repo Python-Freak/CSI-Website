@@ -52,57 +52,75 @@ function HomePage() {
                 <div className={styles.board_member_container}>
                     <div className={`row p-3 ${styles.card_container} ${styles.board_card_container}`}>
                         <div className={`col-md-6 ${styles.card}`}>
-                            <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                            <BoardMemberCard name="Mohit Jethwani" position="President" imagePath="/assets/images/members/board_members/Mohit_Jethwani.jpg" desc="SMALL DESC" />
                         </div>
 
                         <div className={`col-md-6 ${styles.card} `}>
-                            <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                            <BoardMemberCard name="Manav Pandya" position="Vice President" imagePath="/assets/images/members/board_members/Manav_Pandya.jpg" desc="SMALL DESC" />
                         </div>
                     </div>
                     <div className={`row p-3 ${styles.card_container} ${styles.board_card_container}`}>
                         <div className={`col-md-4 ${styles.card}`}>
-                            <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                            <BoardMemberCard name="Rajat Vanzara" position="General Secretary" imagePath="/assets/images/members/board_members/Rajat_Vanzara.heic" desc="SMALL DESC" />
                         </div>
 
                         <div className={`col-md-4 ${styles.card}`}>
-                            <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                            <BoardMemberCard name="Mulya Patel" position="Managing Director" imagePath="/assets/images/members/board_members/Manav_Pandya.jpg" desc="SMALL DESC" />
                         </div>
 
                         <div className={`col-md-4 ${styles.card}`}>
-                            <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                            <BoardMemberCard name="Srujan Kachhadia" position="Managing Director" imagePath="/assets/images/members/board_members/Manav_Pandya.jpg" desc="SMALL DESC" />
                         </div>
                         <div className={`col-md-4 ${styles.card}`}>
-                            <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
-                        </div>
-
-                        <div className={`col-md-4 ${styles.card}`}>
-                            <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                            <BoardMemberCard name="Rudra Shah" position="Technical Director" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
                         </div>
 
                         <div className={`col-md-4 ${styles.card}`}>
-                            <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
-                        </div>
-                        <div className={`col-md-4 ${styles.card}`}>
-                            <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                            <BoardMemberCard name="Ayushi Shah" position="Joint Secretary" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
                         </div>
 
                         <div className={`col-md-4 ${styles.card}`}>
-                            <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
-                        </div>
-
-                        <div className={`col-md-4 ${styles.card}`}>
-                            <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                            <BoardMemberCard name="Vyoma Padalia" position="Joint Secretary" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
                         </div>
                         <div className={`col-md-4 ${styles.card}`}>
                             <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
                         </div>
 
                         <div className={`col-md-4 ${styles.card}`}>
-                            <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                            <BoardMemberCard name="Krish Italiya" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
                         </div>
 
                         <div className={`col-md-4 ${styles.card}`}>
-                            <BoardMemberCard name="Stavan Shah" position="Technical Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                            <BoardMemberCard name="Kavish Shah" position="Event Management Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                        </div>
+                        <div className={`col-md-4 ${styles.card}`}>
+                            <BoardMemberCard name="Keyaba Gohil" position="Organizing Secretary" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                        </div>
+
+                        <div className={`col-md-4 ${styles.card}`}>
+                            <BoardMemberCard name="Nikunj Mahida" position="Graphics Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                        </div>
+
+                        <div className={`col-md-4 ${styles.card}`}>
+                            <BoardMemberCard name="Tanuj Patel" position="Graphics Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                        </div>
+                        <div className={`col-md-4 ${styles.card}`}>
+                            <BoardMemberCard name="Dipti Shah" position="Editor" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                        </div>
+                        <div className={`col-md-4 ${styles.card}`}>
+                            <BoardMemberCard name="Heet Depani" position="Treasurer" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                        </div>
+                        <div className={`col-md-4 ${styles.card}`}>
+                            <BoardMemberCard name="Nisarg Patel" position="Sponsorship Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                        </div>
+                        <div className={`col-md-4 ${styles.card}`}>
+                            <BoardMemberCard name="Bhaumil Patel" position="Sponsorship Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                        </div>
+                        <div className={`col-md-4 ${styles.card}`}>
+                            <BoardMemberCard name="Akshat Kotadia" position="Social Media Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
+                        </div>
+                        <div className={`col-md-4 ${styles.card}`}>
+                            <BoardMemberCard name="Helly Upadhyay" position="Social Media Head" imagePath="/assets/images/members/sample_member.jpg" desc="SMALL DESC" />
                         </div>
                     </div>
                 </div>
