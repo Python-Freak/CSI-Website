@@ -38,15 +38,16 @@ INSTALLED_APPS = [
     'rest_framework',
     'djoser',
     'storages',
+    'corsheaders',
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    'https://csi-website-production.up.railway.app',
+    'https://*.railway.app',
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://csi-website-production.up.railway.app'
-],
+    'https://*.railway.app'
+]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -56,6 +57,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware'
 ]
 
 ROOT_URLCONF = 'server.urls'
