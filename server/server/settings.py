@@ -101,6 +101,16 @@ AUTH_PASSWORD_VALIDATORS = [
     
 ]
 
+if os.getenv('PROTOCOL'):
+    PROTOCOL = os.getenv('PROTOCOL')
+else:
+    PROTOCOL = 'http'
+    
+if os.getenv('DOMAIN'):
+    DOMAIN = os.getenv('DOMAIN')
+else:
+    DOMAIN = '127.0.0.1:8000'
+
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
@@ -139,7 +149,7 @@ SIMPLE_JWT = {
 DJOSER = {
     'PASSWORD_RESET_CONFIRM_URL': '#/password/reset/confirm/{uid}/{token}',
     'USERNAME_RESET_CONFIRM_URL': '#/username/reset/confirm/{uid}/{token}',
-    'ACTIVATION_URL': 'auth/users/activation/{uid}/{token}',
+    'ACTIVATION_URL': 'activate/{uid}/{token}',
     'SEND_ACTIVATION_EMAIL': True,
     'SERIALIZERS': {},
     'USER_ID_FIELD': 'custom_id',
@@ -149,6 +159,9 @@ DJOSER = {
     'PASSWORD_RESET_SHOW_EMAIL_NOT_FOUND': True,
     'USERNAME_RESET_SHOW_EMAIL_NOT_FOUND': True,
     'TOKEN_MODEL': None,
+    'SERIALIZERS': {
+        'user_create': 'authentication.serializers.CustomUserCreateSerializer'
+    }
 }
 
 EMAIL_USE_TLS = True
