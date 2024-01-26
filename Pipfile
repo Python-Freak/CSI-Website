@@ -16,7 +16,11 @@ django-storage-supabase = "*"
 boto3 = "*"
 supabase = "*"
 storage3 = "*"
-django-storages = {extras = ["s3"], version = "*"}
+django-storages = {extras = ["s3"] }
+pyrebase4 = "*"
+python-dotenv = "*"
+gunicorn = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 

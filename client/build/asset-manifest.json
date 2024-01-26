@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/CSI-Website/static/css/main.816b89c1.css",
+    "main.js": "/CSI-Website/static/js/main.e44f2220.js",
+    "index.html": "/CSI-Website/index.html",
+    "main.816b89c1.css.map": "/CSI-Website/static/css/main.816b89c1.css.map",
+    "main.e44f2220.js.map": "/CSI-Website/static/js/main.e44f2220.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.816b89c1.css",
+    "static/js/main.e44f2220.js"
+  ]
+}

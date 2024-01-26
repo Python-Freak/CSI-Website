@@ -1,5 +1,6 @@
 .logo_div {
     width: 100%;
+    padding-top: 180px;
     background-color: var(--csi-blue);
     display: flex;
     flex-direction: column;
@@ -7,6 +8,11 @@
     align-items: center;
     position: relative;
     z-index: 100;
+}
+
+.swiper{
+    background-size: 30%;
+    background-repeat: repeat;
 }
 
 .logo {
@@ -108,7 +114,11 @@
     }
 
     .board_card_container {
-        width: 90%;
+        width: 98%;
+    }
+
+    .board_members {
+        padding: 0%;
     }
 
 }
@@ -137,6 +147,10 @@
     .board_members {
         margin-top: -40px;
     }
+
+    .board_card_container {
+        width: 98%;
+    }
 }
 
 @media only screen and (max-width: 420px) {
@@ -156,5 +170,9 @@
 
     .board_members {
         margin-top: -40px;
+    }
+
+    .board_card_container {
+        width: 98%;
     }
 }

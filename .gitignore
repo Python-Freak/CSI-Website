@@ -5,8 +5,14 @@ node_modules/
 /.pnp
 .pnp.js
 
+
+
+.env
+firebase_creds.json
+
 /server
 server/
+
 
 # testing
 /coverage
